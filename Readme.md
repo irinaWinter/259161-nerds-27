@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ирина Коржева](https://up.htmlacademy.ru/htmlcss/27/user/259161).
-* Наставник: `Неизвестно`.
+* Наставник: [Михон Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
