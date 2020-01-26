@@ -9,16 +9,26 @@
     <header class="header">
       <nav class="navigation">
         <a class="header-logo" href="index.html">
-          <img src="https://via.placeholder.com/160x65?text=nёrd's" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
+          <img class="header-logo__img" src="https://via.placeholder.com/160x65?text=nёrd's" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="">Студия</a></li>
-          <li class="site-navigation-item"><a href="">Клиенты</a></li>
-          <li class="site-navigation-item site-navigation-item-current"><a href="#">Магазин</a></li>
-          <li class="site-navigation-item"><a href="">Кoнтакты</a></li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="">Студия</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="">Клиенты</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Магазин</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="">Кoнтакты</a>
+          </li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-navigation-item"><a href="">Корзина</a></li>
+          <li class="user-navigation__item">
+            <a class="user-navigation__link" href="">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -30,7 +40,7 @@
   	  <section class="filters">
   	  	<h2 class="visually-hidden">Фильтры товаров</h2>
   	  	<!-- Здесь будет форма -->
-  	  	<button class="catalog-btn" type="button">Показать</button>
+  	  	<button class="filters__btn" type="button">Показать</button>
   	  </section>
 
       <section class="sort">
@@ -47,48 +57,48 @@
 
   	  <section class="templates">
   	  	<h2 class="visually-hidden">Список шаблонов</h2>
-  	  	<ul class="templates-list">
+  	  	<ul class="templates__list">
 
-  	  	  <li class="templates-item">
-  	  	  	<h3 class="templates-heading"> <a href="">Sedona</a></h3>
-  	  	  	<img src="https://via.placeholder.com/360x576?text=Sedona" width="360" height="576" alt="Макет сайта Sedona">
-  	  	  	<p class="templates-description">Информационный сайт для туристов</p>
-  	  	  	<p class="templates-price">9 900 ₽</p>
+  	  	  <li class="templates__item">
+  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Sedona</a></h3>
+  	  	  	<img class="templates__img" src="https://via.placeholder.com/360x576?text=Sedona" width="360" height="576" alt="Макет сайта Sedona">
+  	  	  	<p class="templates__description">Информационный сайт для туристов</p>
+  	  	  	<p class="templates__price">9 900 ₽</p>
   	  	  </li>
 
-  	  	  <li class="templates-item">
-  	  	  	<h3 class="templates-heading"><a href="">Pink App</a></h3>
-  	  	  	<img src="https://via.placeholder.com/360x576?text=Pink+App" width="360" height="576" alt="Макет сайта Pink App">
+  	  	  <li class="templates__item">
+  	  	  	<h3 class="templates-heading"><a class="templates__link" href="">Pink App</a></h3>
+  	  	  	<img class="templates__img" src="https://via.placeholder.com/360x576?text=Pink+App" width="360" height="576" alt="Макет сайта Pink App">
   	  	  	<p class="templates-description">Продуктовый лендинг приложения для iOS и Android</p>
   	  	  	<p class="templates-price">9 900 руб.</p>
   	  	  </li>
 
-  	  	  <li class="templates-item">
-  	  	  	<h3 class="templates-heading"><a href="">Barbershop</a></h3>
-  	  	  	<img src="https://via.placeholder.com/360x576?text=Barbershop" width="360" height="576" alt="Макет сайта Barbershop">
-  	  	  	<p class="templates-description">Сайт салона красоты. Для мужчин, да.</p>
-  	  	  	<p class="templates-price">9 900 руб.</p>
+  	  	  <li class="templates__item">
+  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Barbershop</a></h3>
+  	  	  	<img class="templates__img" src="https://via.placeholder.com/360x576?text=Barbershop" width="360" height="576" alt="Макет сайта Barbershop">
+  	  	  	<p class="templates__description">Сайт салона красоты. Для мужчин, да.</p>
+  	  	  	<p class="templates__price">9 900 руб.</p>
   	  	  </li>
 
-  	  	  <li class="templates-item">
-  	  	  	<h3 class="templates-heading"><a href="">Mishka</a></h3>
-  	  	  	<img src="https://via.placeholder.com/360x576?text=Mishka" width="360" height="576" alt="Макет сайта Mishka">
-  	  	  	<p class="templates-description">Интернет-магазин вязаных игрушек</p>
-  	  	  	<p class="templates-price">9 900 руб.</p>
+  	  	  <li class="templates__item">
+  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Mishka</a></h3>
+  	  	  	<img class="templates__img" src="https://via.placeholder.com/360x576?text=Mishka" width="360" height="576" alt="Макет сайта Mishka">
+  	  	  	<p class="templates__description">Интернет-магазин вязаных игрушек</p>
+  	  	  	<p class="templates__price">9 900 руб.</p>
   	  	  </li> 
 
-  	  	  <li class="templates-item">
-  	  	  	<h3 class="templates-heading"><a href="">A plus</a></h3>
-  	  	  	<img src="https://via.placeholder.com/360x576?text=A+plus" width="360" height="576" alt="Макет сайта A plus">
-  	  	  	<p class="templates-description">Лендинг курсов повышения квалификации</p>
-  	  	  	<p class="templates-price">9 900 руб.</p>
+  	  	  <li class="templates__item">
+  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">A plus</a></h3>
+  	  	  	<img class="templates__img" src="https://via.placeholder.com/360x576?text=A+plus" width="360" height="576" alt="Макет сайта A plus">
+  	  	  	<p class="templates__description">Лендинг курсов повышения квалификации</p>
+  	  	  	<p class="templates__price">9 900 руб.</p>
   	  	  </li>
 
-  	  	  <li class="templates-item">
-  	  	  	<h3 class="templates-heading"><a href="">Кваст</a></h3>
-  	  	  	<img src="https://via.placeholder.com/360x576?text=Кваст" width="360" height="576" alt="Макет сайта Кваст">
-  	  	  	<p class="templates-description">Промо-сайт производителя крафтового кваса</p>
-  	  	  	<p class="templates-price">9 900 руб.</p>
+  	  	  <li class="templates__item">
+  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Кваст</a></h3>
+  	  	  	<img class="templates__img" src="https://via.placeholder.com/360x576?text=Кваст" width="360" height="576" alt="Макет сайта Кваст">
+  	  	  	<p class="templates__description">Промо-сайт производителя крафтового кваса</p>
+  	  	  	<p class="templates__price">9 900 руб.</p>
   	  	  </li>  	  	  
   	  	</ul>
 
@@ -113,13 +123,13 @@
           <button class="contacts__button" type="button">Напишите нам</button>
         </div>
       </section>
-      <ul class="social-network">
-        <li class="social-network-item"><a href="">Вконтакте</a></li>
-        <li class="social-network-item"><a href=""></a>Фейсбук</li>
-        <li class="social-network-item"><a href=""></a>Инстаграм</li>
+      <ul class="social">
+        <li class="social__item"><a class="social__link social__link_vk" href="">Вконтакте</a></li>
+        <li class="social__item"><a class="social__link social__link_fb" href="">Фейсбук</a></li>
+        <li class="social__item"><a class="social__link social__link_inst" href="">Инстаграм</a></li>
       </ul>
-      <p class="footer-text">Давайте дружить, это выгодно!</p>
-      <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+      <p class="footer__text">Давайте дружить, это выгодно!</p>
+      <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
 
   </body>
