@@ -9,16 +9,26 @@
     <header class="header">
   	  <nav class="navigation">
   	    <a class="header-logo" href="">
-  		    <img src="https://via.placeholder.com/160x65?text=nёrd's" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
+  		    <img class="header-logo__img" src="https://via.placeholder.com/160x65?text=nёrd's" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
   		  </a>
   		  <ul class="site-navigation">
-  		    <li class="site-navigation-item"><a href="">Студия</a></li>
-  		    <li class="site-navigation-item"><a href="">Клиенты</a></li>
-  		    <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
-  		    <li class="site-navigation-item"><a href="">Кoнтакты</a></li>
+  		    <li class="site-navigation__item">
+            <a class="site-navigation__link" href="">Студия</a>
+          </li>
+  		    <li class="site-navigation__item">
+            <a class="site-navigation__link"href="">Клиенты</a>
+          </li>
+  		    <li class="site-navigation__item">
+            <a class="site-navigation__link"href="catalog.html">Магазин</a>
+          </li>
+  		    <li class="site-navigation__item">
+            <a class="site-navigation__link"href="">Кoнтакты</a>
+          </li>
   		  </ul>
   		  <ul class="user-navigation">
-  		    <li class="user-navigation-item"><a href="">Корзина</a></li>
+  		    <li class="user-navigation__item">
+            <a class="user-navigation__link"href="">Корзина</a>
+          </li>
   		  </ul>
   	  </nav>
   	</header>
@@ -55,27 +65,27 @@
 
   	  <section class="services">
   	  	<h2 class="visually-hidden">Услуги</h2>
-  	  	<ul class="services-list">
+  	  	<ul class="services__list">
 
-  	  	  <li class="services-list-item">
-  	  	  	<h3 class="services-heading">Веб-сайты</h3>
-  	  	  	<img class="services-img" src="https://via.placeholder.com/300x146" width="300" height="146" alt="Веб-сайт">
-  	  	  	<p class="services-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  	  	  	<a class="services-btn services-btn-red" href="#">Заказать</a>
+  	  	  <li class="services__item">
+  	  	  	<h3 class="services__heading">Веб-сайты</h3>
+  	  	  	<img class="services__img" src="https://via.placeholder.com/300x146" width="300" height="146" alt="Веб-сайт">
+  	  	  	<p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+  	  	  	<a class="services__btn services__btn_red" href="#">Заказать</a>
   	  	  </li>
 
-  	  	  <li class="services-item">
-  	  	  	<h3 class="services-heading">Приложения</h3>
-  	  	  	<img class="services-img" src="https://via.placeholder.com/300x146" width="300" height="146" alt="Приложения">
-  	  	  	<p class="services-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-  	  	  	<a class="services-btn services-btn-green" href="#">Заказать</a>
+  	  	  <li class="services__item">
+  	  	  	<h3 class="services__heading">Приложения</h3>
+  	  	  	<img class="services__img" src="https://via.placeholder.com/300x146" width="300" height="146" alt="Приложения">
+  	  	  	<p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+  	  	  	<a class="services__btn services__btn_green" href="#">Заказать</a>
   	  	  </li>
 
-  	  	  <li class="services-item">
-  	  	  	<h3 class="services-heading">Презентации</h3>
-  	  	  	<img class="services-img" src="https://via.placeholder.com/300x146" width="300" height="146" alt="Презентация">
-  	  	  	<p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-  	  	  	<a class="services-btn services-btn-yellow" href="#">Заказать</a>
+  	  	  <li class="services__item">
+  	  	  	<h3 class="services__heading">Презентации</h3>
+  	  	  	<img class="services__img" src="https://via.placeholder.com/300x146" width="300" height="146" alt="Презентация">
+  	  	  	<p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+  	  	  	<a class="services__btn services__btn_yellow" href="#">Заказать</a>
   	  	  </li>
   	  	</ul>
   	  </section>
@@ -133,7 +143,7 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img class="contacts__map" src="https://via.placeholder.com/1725x808?text=Карта" width="1725" height="808" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img class="contacts__map" src="https://via.placeholder.com/1725x808?text=Карта" width="1725" height="808" alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <div class="contacts__card">
           <h3 class="contacts__heading">Nёrds design studio</h3>
           <p class="contacts__text">191186, Санкт-Петербург,<br>
@@ -145,13 +155,13 @@
   	</main>
 
   	<footer class="footer">
-  	  <ul class="social-network">
-  	  	<li class="social-network-item"><a href="">Вконтакте</a></li>
-  	  	<li class="social-network-item"><a href=""></a>Фейсбук</li>
-  	  	<li class="social-network-item"><a href=""></a>Инстаграм</li>
+  	  <ul class="social">
+  	  	<li class="social__item"><a class="social__link social__link_vk" href="">Вконтакте</a></li>
+  	  	<li class="social__item"><a class="social__link social__link_fb" href=""></a>Фейсбук</li>
+  	  	<li class="social__item"><a class="social__link social__link_inst" href=""></a>Инстаграм</li>
   	  </ul>
-  	  <p class="footer-text">Давайте дружить, это выгодно!</p>
-  	  <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+  	  <p class="footer__text">Давайте дружить, это выгодно!</p>
+  	  <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
   	</footer>
 
   </body>
