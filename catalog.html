@@ -5,7 +5,6 @@
 	<title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
     <header class="header">
       <nav class="navigation">
         <a class="header-logo" href="index.html">
@@ -32,17 +31,13 @@
         </ul>
       </nav>
     </header>
-
-  	<main class="container">
-  	  
+  	<main class="container">	  
   	  <h1 class="page-title">Магазин готовых шаблонов</h1>
-
   	  <section class="filters">
   	  	<h2 class="visually-hidden">Фильтры товаров</h2>
   	  	<!-- Здесь будет форма -->
   	  	<button class="filters__btn" type="button">Показать</button>
   	  </section>
-
       <section class="sort">
         <h2 class="visually-hidden">Типы сортировки</h2>
         <p class="sort__text">Сортировать:</p>
@@ -54,46 +49,39 @@
         <button class="sort__btn sort__btn_min" type="button"></button>
         <button class="sort__btn sort__btn_max" type="button"></button>
       </section>
-
   	  <section class="templates">
   	  	<h2 class="visually-hidden">Список шаблонов</h2>
   	  	<ul class="templates__list">
-
   	  	  <li class="templates__item">
   	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Sedona</a></h3>
   	  	  	<img class="templates__img" src="img/sedona.jpg" width="360" height="576" alt="Макет сайта Sedona">
   	  	  	<p class="templates__description">Информационный сайт для туристов</p>
   	  	  	<p class="templates__price">9 900 ₽</p>
   	  	  </li>
-
   	  	  <li class="templates__item">
   	  	  	<h3 class="templates-heading"><a class="templates__link" href="">Pink App</a></h3>
   	  	  	<img class="templates__img" src="img/pink.jpg" width="360" height="576" alt="Макет сайта Pink App">
   	  	  	<p class="templates-description">Продуктовый лендинг приложения для iOS и Android</p>
   	  	  	<p class="templates-price">9 900 руб.</p>
   	  	  </li>
-
   	  	  <li class="templates__item">
   	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Barbershop</a></h3>
   	  	  	<img class="templates__img" src="img/barbershop.jpg" width="360" height="576" alt="Макет сайта Barbershop">
   	  	  	<p class="templates__description">Сайт салона красоты. Для мужчин, да.</p>
   	  	  	<p class="templates__price">9 900 руб.</p>
   	  	  </li>
-
   	  	  <li class="templates__item">
   	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Mishka</a></h3>
   	  	  	<img class="templates__img" src="img/mishka.jpg" width="360" height="576" alt="Макет сайта Mishka">
   	  	  	<p class="templates__description">Интернет-магазин вязаных игрушек</p>
   	  	  	<p class="templates__price">9 900 руб.</p>
   	  	  </li> 
-
   	  	  <li class="templates__item">
   	  	  	<h3 class="templates__heading"><a class="templates__link" href="">A plus</a></h3>
   	  	  	<img class="templates__img" src="img/aplus.jpg" width="360" height="576" alt="Макет сайта A plus">
   	  	  	<p class="templates__description">Лендинг курсов повышения квалификации</p>
   	  	  	<p class="templates__price">9 900 руб.</p>
   	  	  </li>
-
   	  	  <li class="templates__item">
   	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Кваст</a></h3>
   	  	  	<img class="templates__img" src="img/kvast.jpg" width="360" height="576" alt="Макет сайта Кваст">
@@ -101,7 +89,6 @@
   	  	  	<p class="templates__price">9 900 руб.</p>
   	  	  </li>  	  	  
   	  	</ul>
-
         <ol class="pagination">
           <li class="pagination__item pagination__item_current"><a>1</a></li>
           <li class="pagination__item"><a href="">2</a></li>
@@ -110,7 +97,6 @@
         </ol>
   	  </section>      
   	</main>
-
     <footer class="footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
@@ -144,6 +130,18 @@
       <p class="footer__text">Давайте дружить, это выгодно!</p>
       <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-
+    <section class="popup hidden">
+      <h2 class="popup__heading">Напишите нам</h2>
+      <form class="popup__form" action="mailto:lobanova.irina.96@mail.ru" enctype="text/plain" method="post">
+        <label class="popup__label">Ваше имя</label>
+        <input class="popup__field" type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label class="popup__label" for="e-mail">Ваш e-mail:</label>
+        <input class="popup__field" type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+        <label class="popup__label" for="text">Текст письма:</label>
+        <textarea class="popup__textarea" name="text" id="text" placeholder="В свободной форме"></textarea>
+        <button class="btn btn-red" type="submit">Отправить</button>
+        <button class="popup__close" type="button" aria-label="Закрыть"></button>
+      </form>
+    </section>
   </body>
 </html>

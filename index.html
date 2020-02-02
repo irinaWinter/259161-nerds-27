@@ -5,7 +5,6 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
     <header class="header">
   	  <nav class="navigation">
   	    <a class="header-logo" href="">
@@ -32,11 +31,8 @@
   		  </ul>
   	  </nav>
   	</header>
-
-  	<main class="container">
-  		
+  	<main class="container">		
   	  <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
-
       <section class="principles">
         <h2 class="visually-hidden">Принципы</h2>
         <ul class="slider">
@@ -62,25 +58,21 @@
           <button class="dot" type="button"></button>
         </div>
       </section>
-
   	  <section class="services">
   	  	<h2 class="visually-hidden">Услуги</h2>
   	  	<ul class="services__list">
-
   	  	  <li class="services__item">
   	  	  	<h3 class="services__heading">Веб-сайты</h3>
   	  	  	<img class="services__img" src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайт">
   	  	  	<p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
   	  	  	<a class="services__btn services__btn_red" href="#">Заказать</a>
   	  	  </li>
-
   	  	  <li class="services__item">
   	  	  	<h3 class="services__heading">Приложения</h3>
   	  	  	<img class="services__img" src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
   	  	  	<p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
   	  	  	<a class="services__btn services__btn_green" href="#">Заказать</a>
   	  	  </li>
-
   	  	  <li class="services__item">
   	  	  	<h3 class="services__heading">Презентации</h3>
   	  	  	<img class="services__img" src="img/illustration-3.png" width="300" height="146" alt="Презентация">
@@ -89,10 +81,8 @@
   	  	  </li>
   	  	</ul>
   	  </section>
-
       <section class="about">
         <h2 class="visually-hidden">О нас</h2>
-
         <div class="column-left">
           <p class="about__text">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -103,7 +93,6 @@
             <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-
         <div class="column-right">
           <img class="about__img" src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип дизайн-студии «Нёрдс»">
           <p class="about__activity">С 2004 года любим точность во всем:</p>
@@ -123,7 +112,6 @@
           </ul>
         </div>
       </section>
-
       <section class="client">
         <h2 class="visually-hidden">Наши клиенты</h2>
         <ul class="client__list">
@@ -142,7 +130,6 @@
         </ul>
       </section>
   	</main>
-
   	<footer class="footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
@@ -176,6 +163,18 @@
   	  <p class="footer__text">Давайте дружить, это выгодно!</p>
   	  <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
   	</footer>
-
+    <section class="popup hidden">
+      <h2 class="popup__heading">Напишите нам</h2>
+      <form class="popup__form" action="mailto:lobanova.irina.96@mail.ru" enctype="text/plain" method="post">
+        <label class="popup__label">Ваше имя</label>
+        <input class="popup__field" type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label class="popup__label" for="e-mail">Ваш e-mail:</label>
+        <input class="popup__field" type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+        <label class="popup__label" for="text">Текст письма:</label>
+        <textarea class="popup__textarea" name="text" id="text" placeholder="В свободной форме"></textarea>
+        <button class="btn btn-red" type="submit">Отправить</button>
+        <button class="popup__close" type="button" aria-label="Закрыть"></button>
+      </form>
+    </section>
   </body>
 </html>
