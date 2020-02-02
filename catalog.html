@@ -35,8 +35,31 @@
   	  <h1 class="page-title">Магазин готовых шаблонов</h1>
   	  <section class="filters">
   	  	<h2 class="visually-hidden">Фильтры товаров</h2>
-  	  	<!-- Здесь будет форма -->
-  	  	<button class="btn btn-grey" type="button">Показать</button>
+  	  	<form class="filters__form" action="mailto:lobanova.irina.96@mail.ru" enctype="text/plain" method="post">
+          <fieldset class="filters__fieldset">
+            <legend class="filters__type">Сетка:</legend>
+            <input class="filtres__radio" type="radio" name="grid" id="adaptive" checked>
+            <label class="filters__label" for="adaptive">Адаптивная</label>
+            <input class="filtres__radio" type="radio" name="grid" id="fixed">
+            <label class="filters__label" for="fixed">Фиксированная</label>
+            <input class="filtres__radio" type="radio" name="grid" id="stretch">
+            <label class="filters__label" for="stretch">Резиновая</label>
+          </fieldset>
+          <fieldset class="filters__fieldset">
+            <legend class="filters__type">Особенности:</legend>
+            <input class="filters__checkbox" type="checkbox" name="slider" id="slider" checked>
+            <label class="filters__label" for="slider">Слайдер</label>
+            <input class="filters__checkbox" type="checkbox" name="advantages" id="advantages">
+            <label class="filters__label" for="advantages">Блок преимуществ</label>
+            <input class="filters__checkbox" type="checkbox" name="news" id="news" checked>
+            <label class="filters__label" for="news">Новости</label>
+            <input class="filters__checkbox" type="checkbox" name="gallery" id="gallery">
+            <label class="filters__label" for="gallery">Галерея</label>
+            <input class="filters__checkbox" type="checkbox" name="basket" id="basket">
+            <label class="filters__label" for="basket">Корзина</label>
+          </fieldset>
+          <button class="btn btn-grey" type="submit">Показать</button>
+        </form>
   	  </section>
       <section class="sort">
         <h2 class="visually-hidden">Типы сортировки</h2>
