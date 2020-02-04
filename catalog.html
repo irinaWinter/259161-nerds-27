@@ -78,12 +78,18 @@
         <h2 class="visually-hidden">Типы сортировки</h2>
         <p class="sort__text">Сортировать:</p>
         <ul class="sort__list">
-          <li class="sort__type sort__type_active">По цене</li>
-          <li class="sort__type">По типу</li>
-          <li class="sort__type">По названию</li>
+          <li class="sort__item">
+            <button class="sort__type sort__type-active" type="button">По цене</button>
+          </li>
+          <li class="sort__item">
+            <button class="sort__type" type="button">По типу</button>
+          </li>
+          <li class="sort__item">
+            <button class="sort__type" type="button">По названию</button>
+          </li>
         </ul>
-        <button class="sort__btn sort__btn_min" type="button"></button>
-        <button class="sort__btn sort__btn_max" type="button"></button>
+        <button class="sort__btn sort__btn_min" type="button" aria-label="Сортировать по возрастанию"></button>
+        <button class="sort__btn sort__btn_max" type="button" aria-label="Сортировать по убыванию"></button>
       </section>
   	  <section class="templates">
   	  	<h2 class="visually-hidden">Список шаблонов</h2>
