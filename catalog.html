@@ -37,6 +37,19 @@
   	  	<h2 class="visually-hidden">Фильтры товаров</h2>
   	  	<form class="filters__form" action="mailto:lobanova.irina.96@mail.ru" enctype="text/plain" method="post">
           <fieldset class="filters__fieldset">
+            <legend class="filters__type">Стоимость:</legend>
+            <div class="range">
+              <div class="range__track">
+                <div class="range__pin range__pin-min"></div>
+                <div class="range__pin range__pin-max"></div>
+              </div>
+              <label class="range__label" for="min-price">От</label>
+              <input class="range__value" type="number" value="0" name="min" id="min-price">
+              <label class="range__label" for="max-price">До</label>
+              <input class="range__value" type="number" value="15000" name="max" id="max-price">
+            </div>
+          </fieldset>
+          <fieldset class="filters__fieldset">
             <legend class="filters__type">Сетка:</legend>
             <input class="filtres__radio" type="radio" name="grid" id="adaptive" checked>
             <label class="filters__label" for="adaptive">Адаптивная</label>
