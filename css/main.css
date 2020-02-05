@@ -156,7 +156,7 @@ html {
 
 .navigation__link-active {
   padding-bottom: 13px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #fb565a;
 }  
 
 .navigation__link:hover,
