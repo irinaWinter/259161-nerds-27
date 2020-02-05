@@ -223,7 +223,6 @@ html {
 
 .footer__discount {
   font-size: 16px;
-  font-weight: 400;
   line-height: 22px;
   color: #444444;
 }
@@ -248,7 +247,6 @@ html {
 
 .filters__label {
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: #283136;
 }
@@ -256,4 +254,65 @@ html {
 .filters__radio:disabled + .filters__label,
 .filters__checkbox:disabled + .filters__label {
   color: rgba(3, 40, 61, 0.3);
+}
+
+
+/*templates*/
+
+.templates__item {
+  background-color: #eeeeee;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.templates__item:hover {
+  border: 1px solid rgba(77, 77, 77, 0.1);
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.25);
+}
+
+.templates__list {
+  list-style-type: none;
+}
+
+.templates__link {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.templates__link:hover,
+.templates__link:focus {
+  color: #fb565a;
+}
+
+.templates__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.templates__description {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.templates__price {
+  background-color: #fb565a;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.templates__price:hover,
+.templates__price:focus {
+  background-color: #e74246;
+}
+
+.templates__price:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
