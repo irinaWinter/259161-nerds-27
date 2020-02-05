@@ -56,25 +56,45 @@
           </fieldset>
           <fieldset class="filters__fieldset">
             <legend class="filters__type">Сетка:</legend>
-            <input class="filtres__radio" type="radio" name="grid" id="adaptive" checked>
-            <label class="filters__label" for="adaptive">Адаптивная</label>
-            <input class="filtres__radio" type="radio" name="grid" id="fixed">
-            <label class="filters__label" for="fixed">Фиксированная</label>
-            <input class="filtres__radio" type="radio" name="grid" id="stretch">
-            <label class="filters__label" for="stretch">Резиновая</label>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <input class="filtres__radio" type="radio" name="grid" id="adaptive" checked>
+                <label class="filters__label" for="adaptive">Адаптивная</label>
+              </li>  
+              <li class="filters__item">  
+                <input class="filtres__radio" type="radio" name="grid" id="fixed">
+                <label class="filters__label" for="fixed">Фиксированная</label>
+              </li>  
+              <li class="filters__item">  
+                <input class="filtres__radio" type="radio" name="grid" id="stretch">
+                <label class="filters__label" for="stretch">Резиновая</label>
+              </li>  
+            </ul>  
           </fieldset>
           <fieldset class="filters__fieldset">
             <legend class="filters__type">Особенности:</legend>
-            <input class="filters__checkbox" type="checkbox" name="slider" id="slider" checked>
-            <label class="filters__label" for="slider">Слайдер</label>
-            <input class="filters__checkbox" type="checkbox" name="advantages" id="advantages">
-            <label class="filters__label" for="advantages">Блок преимуществ</label>
-            <input class="filters__checkbox" type="checkbox" name="news" id="news" checked>
-            <label class="filters__label" for="news">Новости</label>
-            <input class="filters__checkbox" type="checkbox" name="gallery" id="gallery">
-            <label class="filters__label" for="gallery">Галерея</label>
-            <input class="filters__checkbox" type="checkbox" name="basket" id="basket">
-            <label class="filters__label" for="basket">Корзина</label>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <input class="filters__checkbox" type="checkbox" name="slider" id="slider" checked>
+                <label class="filters__label" for="slider">Слайдер</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__checkbox" type="checkbox" name="advantages" id="advantages">
+                <label class="filters__label" for="advantages">Блок преимуществ</label>
+              </li>
+              <li class="filters__item">  
+                <input class="filters__checkbox" type="checkbox" name="news" id="news" checked>
+                <label class="filters__label" for="news">Новости</label>
+              </li>
+              <li class="filters__item">  
+                <input class="filters__checkbox" type="checkbox" name="gallery" id="gallery">
+                <label class="filters__label" for="gallery">Галерея</label>
+              </li>
+              <li class="filters__item">  
+                <input class="filters__checkbox" type="checkbox" name="basket" id="basket">
+                <label class="filters__label" for="basket">Корзина</label>
+              </li>  
+            </ul>
           </fieldset>
           <button class="btn btn-grey" type="submit">Показать</button>
         </form>
