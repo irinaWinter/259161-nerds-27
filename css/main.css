@@ -26,6 +26,9 @@ html {
 
 
 /*header*/
+.header {
+  background-color: #eee;
+}
 
 .header-logo__img:hover {
   opacity: 0.8;
