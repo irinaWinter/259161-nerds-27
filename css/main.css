@@ -227,3 +227,33 @@ html {
   line-height: 22px;
   color: #444444;
 }
+
+
+/*filters*/
+
+.filters__fieldset {
+  border: none;
+}
+
+.filters__type {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filters__list {
+  list-style-type: none;
+}
+
+.filters__label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #283136;
+}
+
+.filters__radio:disabled + .filters__label,
+.filters__checkbox:disabled + .filters__label {
+  color: rgba(3, 40, 61, 0.3);
+}
