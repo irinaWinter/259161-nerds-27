@@ -381,6 +381,42 @@ html {
 }
 
 
+/*sort*/
+
+.sort__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sort__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort__type {
+  border: none;
+  background-color: transparent;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.sort__type:hover,
+.sort__type:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort__type:active,
+.sort__type-active {
+  color: rgba(0, 0, 0, 1);
+}
+
+
 /*filters*/
 
 .filters__fieldset {
