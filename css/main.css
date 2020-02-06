@@ -222,6 +222,61 @@ html {
 }
 
 
+/*about*/
+
+.about__text {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.about__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+.about__activity {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about__item {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;  
+}
+
+
+/*statistics*/
+.statistics {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.statistics__text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136;
+}
+
+.statistics__value {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10px;
+  color: #000;
+}
+
+
 /*social*/
 
 .social {
