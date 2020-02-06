@@ -299,7 +299,24 @@ html {
 }
 
 
+/*contacts*/
 
+.contacts__card {
+  background-color: #fff;
+}
+
+.contacts__heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666;
+}
 
 
 /*social*/
