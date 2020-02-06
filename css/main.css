@@ -524,6 +524,7 @@ html {
 .pagination__link {
   background-color: #eee;
 
+  color: #000;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
