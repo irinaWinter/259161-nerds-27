@@ -361,6 +361,26 @@ html {
 }
 
 
+/*range*/
+
+.range__label {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.range__value {
+  background-color: #eeeeee;
+  border: none;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  text-align: center;  
+}
+
+
 /*filters*/
 
 .filters__fieldset {
