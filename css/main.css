@@ -277,6 +277,31 @@ html {
 }
 
 
+/*client*/
+
+.client__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.client__link {
+  opacity: 0.2;
+}
+
+.client__link:hover,
+.client__link:focus {
+  opacity: 1;
+}
+
+.client__link:active {
+  opacity: 0.1;
+}
+
+
+
+
+
 /*social*/
 
 .social {
