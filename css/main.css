@@ -1,6 +1,6 @@
 body { 
   margin: 0;
-
+  padding: 0;
   font-family: Roboto, Arial, sans-serif;
 }
 
@@ -176,6 +176,7 @@ html {
 
 .navigation__item {
   display: inline-block;
+  vertical-align: top;
 }
 .navigation__item:not(:first-child) {
   margin-left: 42.6px;
@@ -395,6 +396,7 @@ html {
 
 .social__item {
   display: inline-block;
+  vertical-align: center;
 }
 .social__item:not(:first-child) {
   margin-left: 12px;
@@ -486,6 +488,7 @@ html {
 
 .sort__item {
   display: inline-block;
+  vertical-align: top;
 }
 
 .sort__item:not(:first-child) {
