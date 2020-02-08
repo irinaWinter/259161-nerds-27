@@ -235,10 +235,24 @@ html {
 
 /*services*/
 
+
 .services__list {
+  display: flex;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.services__item {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 300px;
+}
+
+.services__item:not(:first-child) {
+  margin-left: 100px;
 }
 
 .services__heading {
@@ -246,6 +260,10 @@ html {
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.services__img {
+  order: -1;
 }
 
 .services__text {
