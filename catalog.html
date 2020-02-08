@@ -37,132 +37,136 @@
   	<main>
       <div class="box-grey">	  
   	    <h1 class="page-title">Магазин готовых шаблонов</h1>
-      </div>  
-  	  <section class="filters">
-  	  	<h2 class="visually-hidden">Фильтры товаров</h2>
-  	  	<form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="filters__fieldset">
-            <legend class="filters__type">Стоимость:</legend>
-            <div class="range">
-              <div class="range__track">
-                <div class="range__pin range__pin-min"></div>
-                <div class="range__pin range__pin-max"></div>
+      </div>
+      <div class="container container-store">    
+    	  <section class="filters">
+    	  	<h2 class="visually-hidden">Фильтры товаров</h2>
+    	  	<form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="filters__fieldset">
+              <legend class="filters__type">Стоимость:</legend>
+              <div class="range">
+                <div class="range__track">
+                  <div class="range__pin range__pin-min"></div>
+                  <div class="range__pin range__pin-max"></div>
+                </div>
+                <label class="range__label" for="min-price">От</label>
+                <input class="range__value" type="number" value="0" name="min" id="min-price">
+                <label class="range__label" for="max-price">До</label>
+                <input class="range__value" type="number" value="15000" name="max" id="max-price">
               </div>
-              <label class="range__label" for="min-price">От</label>
-              <input class="range__value" type="number" value="0" name="min" id="min-price">
-              <label class="range__label" for="max-price">До</label>
-              <input class="range__value" type="number" value="15000" name="max" id="max-price">
-            </div>
-          </fieldset>
-          <fieldset class="filters__fieldset">
-            <legend class="filters__type">Сетка:</legend>
-            <ul class="filters__list">
-              <li class="filters__item">
-                <input class="filters__radio" type="radio" name="grid" id="adaptive" checked>
-                <label class="filters__label" for="adaptive">Адаптивная</label>
-              </li>  
-              <li class="filters__item">  
-                <input class="filters__radio" type="radio" name="grid" id="fixed">
-                <label class="filters__label" for="fixed">Фиксированная</label>
-              </li>  
-              <li class="filters__item">  
-                <input class="filters__radio" type="radio" name="grid" id="stretch">
-                <label class="filters__label" for="stretch">Резиновая</label>
-              </li>  
-            </ul>  
-          </fieldset>
-          <fieldset class="filters__fieldset">
-            <legend class="filters__type">Особенности:</legend>
-            <ul class="filters__list">
-              <li class="filters__item">
-                <input class="filters__checkbox" type="checkbox" name="slider" id="slider" checked>
-                <label class="filters__label" for="slider">Слайдер</label>
+            </fieldset>
+            <fieldset class="filters__fieldset">
+              <legend class="filters__type">Сетка:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input class="filters__radio" type="radio" name="grid" id="adaptive" checked>
+                  <label class="filters__label" for="adaptive">Адаптивная</label>
+                </li>  
+                <li class="filters__item">  
+                  <input class="filters__radio" type="radio" name="grid" id="fixed">
+                  <label class="filters__label" for="fixed">Фиксированная</label>
+                </li>  
+                <li class="filters__item">  
+                  <input class="filters__radio" type="radio" name="grid" id="stretch">
+                  <label class="filters__label" for="stretch">Резиновая</label>
+                </li>  
+              </ul>  
+            </fieldset>
+            <fieldset class="filters__fieldset">
+              <legend class="filters__type">Особенности:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input class="filters__checkbox" type="checkbox" name="slider" id="slider" checked>
+                  <label class="filters__label" for="slider">Слайдер</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox" type="checkbox" name="advantages" id="advantages">
+                  <label class="filters__label" for="advantages">Блок преимуществ</label>
+                </li>
+                <li class="filters__item">  
+                  <input class="filters__checkbox" type="checkbox" name="news" id="news" checked>
+                  <label class="filters__label" for="news">Новости</label>
+                </li>
+                <li class="filters__item">  
+                  <input class="filters__checkbox" type="checkbox" name="gallery" id="gallery">
+                  <label class="filters__label" for="gallery">Галерея</label>
+                </li>
+                <li class="filters__item">  
+                  <input class="filters__checkbox" type="checkbox" name="basket" id="basket">
+                  <label class="filters__label" for="basket">Корзина</label>
+                </li>  
+              </ul>
+            </fieldset>
+            <button class="btn btn-grey" type="submit">Показать</button>
+          </form>
+    	  </section>
+        <div class="column-store">  
+          <section class="sort">
+            <h2 class="visually-hidden">Типы сортировки</h2>
+            <p class="sort__text">Сортировать:</p>
+            <ul class="sort__list">
+              <li class="sort__item">
+                <button class="sort__type sort__type-active" type="button">По цене</button>
               </li>
-              <li class="filters__item">
-                <input class="filters__checkbox" type="checkbox" name="advantages" id="advantages">
-                <label class="filters__label" for="advantages">Блок преимуществ</label>
+              <li class="sort__item">
+                <button class="sort__type" type="button">По типу</button>
               </li>
-              <li class="filters__item">  
-                <input class="filters__checkbox" type="checkbox" name="news" id="news" checked>
-                <label class="filters__label" for="news">Новости</label>
+              <li class="sort__item">
+                <button class="sort__type" type="button">По названию</button>
               </li>
-              <li class="filters__item">  
-                <input class="filters__checkbox" type="checkbox" name="gallery" id="gallery">
-                <label class="filters__label" for="gallery">Галерея</label>
-              </li>
-              <li class="filters__item">  
-                <input class="filters__checkbox" type="checkbox" name="basket" id="basket">
-                <label class="filters__label" for="basket">Корзина</label>
-              </li>  
             </ul>
-          </fieldset>
-          <button class="btn btn-grey" type="submit">Показать</button>
-        </form>
-  	  </section>
-      <section class="sort">
-        <h2 class="visually-hidden">Типы сортировки</h2>
-        <p class="sort__text">Сортировать:</p>
-        <ul class="sort__list">
-          <li class="sort__item">
-            <button class="sort__type sort__type-active" type="button">По цене</button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__type" type="button">По типу</button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__type" type="button">По названию</button>
-          </li>
-        </ul>
-        <button class="sort__btn sort__btn_min" type="button" aria-label="Сортировать по возрастанию"></button>
-        <button class="sort__btn sort__btn_max" type="button" aria-label="Сортировать по убыванию"></button>
-      </section>
-  	  <section class="templates">
-  	  	<h2 class="visually-hidden">Список шаблонов</h2>
-  	  	<ul class="templates__list">
-  	  	  <li class="templates__item">
-  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Sedona</a></h3>
-  	  	  	<img class="templates__img" src="img/sedona.jpg" width="360" height="576" alt="Макет сайта Sedona">
-  	  	  	<p class="templates__description">Информационный сайт для туристов</p>
-  	  	  	<p class="templates__price">9 900 ₽</p>
-  	  	  </li>
-  	  	  <li class="templates__item">
-  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Pink App</a></h3>
-  	  	  	<img class="templates__img" src="img/pink.jpg" width="360" height="576" alt="Макет сайта Pink App">
-  	  	  	<p class="templates__description">Продуктовый лендинг приложения для iOS и Android</p>
-  	  	  	<p class="templates__price">9 900 руб.</p>
-  	  	  </li>
-  	  	  <li class="templates__item">
-  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Barbershop</a></h3>
-  	  	  	<img class="templates__img" src="img/barbershop.jpg" width="360" height="576" alt="Макет сайта Barbershop">
-  	  	  	<p class="templates__description">Сайт салона красоты. Для мужчин, да.</p>
-  	  	  	<p class="templates__price">9 900 руб.</p>
-  	  	  </li>
-  	  	  <li class="templates__item">
-  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Mishka</a></h3>
-  	  	  	<img class="templates__img" src="img/mishka.jpg" width="360" height="576" alt="Макет сайта Mishka">
-  	  	  	<p class="templates__description">Интернет-магазин вязаных игрушек</p>
-  	  	  	<p class="templates__price">9 900 руб.</p>
-  	  	  </li> 
-  	  	  <li class="templates__item">
-  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">A plus</a></h3>
-  	  	  	<img class="templates__img" src="img/aplus.jpg" width="360" height="576" alt="Макет сайта A plus">
-  	  	  	<p class="templates__description">Лендинг курсов повышения квалификации</p>
-  	  	  	<p class="templates__price">9 900 руб.</p>
-  	  	  </li>
-  	  	  <li class="templates__item">
-  	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Кваст</a></h3>
-  	  	  	<img class="templates__img" src="img/kvast.jpg" width="360" height="576" alt="Макет сайта Кваст">
-  	  	  	<p class="templates__description">Промо-сайт производителя крафтового кваса</p>
-  	  	  	<p class="templates__price">9 900 руб.</p>
-  	  	  </li>  	  	  
-  	  	</ul>
-        <ol class="pagination">
-          <li class="pagination__item"><a class="pagination__link pagination__link-active">1</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
-          <li class="pagination__item pagination__item_btn"><a class="btn btn-grey" href="">Следующая</a></li>
-        </ol>
-  	  </section>      
+            <button class="sort__btn sort__btn-min" type="button" aria-label="Сортировать по возрастанию"></button>
+            <button class="sort__btn sort__btn-max" type="button" aria-label="Сортировать по убыванию"></button>
+          </section>
+      	  <section class="templates">
+      	  	<h2 class="visually-hidden">Список шаблонов</h2>
+      	  	<ul class="templates__list">
+      	  	  <li class="templates__item">
+      	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Sedona</a></h3>
+      	  	  	<img class="templates__img" src="img/sedona.jpg" width="360" height="576" alt="Макет сайта Sedona">
+      	  	  	<p class="templates__description">Информационный сайт для туристов</p>
+      	  	  	<p class="templates__price">9 900 ₽</p>
+      	  	  </li>
+      	  	  <li class="templates__item">
+      	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Pink App</a></h3>
+      	  	  	<img class="templates__img" src="img/pink.jpg" width="360" height="576" alt="Макет сайта Pink App">
+      	  	  	<p class="templates__description">Продуктовый лендинг приложения для iOS и Android</p>
+      	  	  	<p class="templates__price">9 900 руб.</p>
+      	  	  </li>
+      	  	  <li class="templates__item">
+      	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Barbershop</a></h3>
+      	  	  	<img class="templates__img" src="img/barbershop.jpg" width="360" height="576" alt="Макет сайта Barbershop">
+      	  	  	<p class="templates__description">Сайт салона красоты. Для мужчин, да.</p>
+      	  	  	<p class="templates__price">9 900 руб.</p>
+      	  	  </li>
+      	  	  <li class="templates__item">
+      	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Mishka</a></h3>
+      	  	  	<img class="templates__img" src="img/mishka.jpg" width="360" height="576" alt="Макет сайта Mishka">
+      	  	  	<p class="templates__description">Интернет-магазин вязаных игрушек</p>
+      	  	  	<p class="templates__price">9 900 руб.</p>
+      	  	  </li> 
+      	  	  <li class="templates__item">
+      	  	  	<h3 class="templates__heading"><a class="templates__link" href="">A plus</a></h3>
+      	  	  	<img class="templates__img" src="img/aplus.jpg" width="360" height="576" alt="Макет сайта A plus">
+      	  	  	<p class="templates__description">Лендинг курсов повышения квалификации</p>
+      	  	  	<p class="templates__price">9 900 руб.</p>
+      	  	  </li>
+      	  	  <li class="templates__item">
+      	  	  	<h3 class="templates__heading"><a class="templates__link" href="">Кваст</a></h3>
+      	  	  	<img class="templates__img" src="img/kvast.jpg" width="360" height="576" alt="Макет сайта Кваст">
+      	  	  	<p class="templates__description">Промо-сайт производителя крафтового кваса</p>
+      	  	  	<p class="templates__price">9 900 руб.</p>
+      	  	  </li>  	  	  
+      	  	</ul>
+            <ol class="pagination">
+              <li class="pagination__item"><a class="pagination__link pagination__link-active">1</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+              <li class="pagination__item pagination__item_btn"><a class="btn btn-grey" href="">Следующая</a></li>
+            </ol>
+      	  </section>
+        </div>  
+      </div>        
   	</main>
     <footer class="footer">
       <section class="contacts">

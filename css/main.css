@@ -45,6 +45,8 @@ html {
 }
 
 .box-grey {
+  margin-bottom: 55px;
+  padding: 59px 0 110px;
   background-color: #eeeeee;
 }
 
@@ -188,7 +190,7 @@ html {
 }
 
 .navigation__link-active {
-  padding-bottom: 13px;
+  padding-bottom: 9px;
   border-bottom: 2px solid #fb565a;
 }  
 
@@ -204,6 +206,7 @@ html {
 
 
 /*slider*/
+
 .slider {
   margin: 0;
   padding: 0;
@@ -233,8 +236,14 @@ html {
 }
 
 
-/*services*/
+/*page-title*/
 
+.page-title {
+  margin: 0;
+}
+
+
+/*services*/
 
 .services__list {
   display: flex;
@@ -308,6 +317,7 @@ html {
 
 
 /*statistics*/
+
 .statistics {
   margin: 0;
   padding: 0;
@@ -371,6 +381,7 @@ html {
 
 
 /*social*/
+
 .container-social {
   display: flex;
   align-items: center;
@@ -427,6 +438,17 @@ html {
 }
 
 
+/*store*/
+
+.container-store {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-store{
+  width: 760px;
+}
+
 /*range*/
 
 .range__label {
@@ -449,13 +471,29 @@ html {
 
 /*sort*/
 
+.sort {
+  display: flex;
+  padding-top: 4px;
+}
+
 .sort__list {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
   padding: 0;
   list-style-type: none;
 }
 
+.sort__item {
+  display: inline-block;
+}
+
+.sort__item:not(:first-child) {
+  margin-left: 10px;
+}
+
 .sort__text {
+  margin: 0px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -482,8 +520,20 @@ html {
   color: rgba(0, 0, 0, 1);
 }
 
+.sort__btn-min {
+  margin-left: 40px;
+}
+
+.sort__btn-max {
+  margin-left: 10px;
+}
+
 
 /*filters*/
+
+.filters {
+  width: 260px;
+}
 
 .filters__fieldset {
   margin: 0;
@@ -517,22 +567,43 @@ html {
 
 
 /*templates*/
+.templates {
+  margin-top: 54px;
+}
+
+.templates__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0; 
+  list-style-type: none;
+}
 
 .templates__item {
+  width: 360px;
   background-color: #eeeeee;
-  text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.templates__item:not(:nth-child(2n+1)) {
+  margin-left: 36px;
+}
+
+.templates__item {
+  margin-top: 30px;
+}
+
+.templates__item:nth-child(1),
+.templates__item:nth-child(2) {
+  margin-top: 0;
 }
 
 .templates__item:hover {
   border: 1px solid rgba(77, 77, 77, 0.1);
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.25);
-}
-
-.templates__list {
-  margin: 0;
-  padding: 0;	
-  list-style-type: none;
 }
 
 .templates__link {
