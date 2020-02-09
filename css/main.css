@@ -59,7 +59,6 @@ html {
 
 .btn {
   display: block;
-  margin-top: 39px;
   padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
@@ -81,10 +80,12 @@ html {
 }
 
 .btn-medium {
+  margin-top: 38px;
   width: 220px;
 }
 
 .btn-big {
+  margin-top: 39px;
   width: 240px;
 }
 
@@ -845,9 +846,18 @@ html {
 /*pagination*/
 
 .pagination {
-  margin: 0;
+  margin: 60px 0 0 0;
   padding: 0;
   list-style-type: none;
+}
+
+.pagination__item {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.pagination__item:not(:first-child) {
+  margin-left: 11px;
 }
 
 .pagination__link {
