@@ -76,6 +76,7 @@ html {
 }
 
 .btn-small {
+  margin-top: 33px;
   width: 160px;
 }
 
@@ -346,6 +347,10 @@ html {
 
 /*services*/
 
+.services {
+  margin-top: 80px;
+}
+
 .services__list {
   display: flex;
 
@@ -366,6 +371,8 @@ html {
 }
 
 .services__heading {
+  margin-top: 25px;
+  margin-bottom: 0px;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
@@ -377,6 +384,8 @@ html {
 }
 
 .services__text {
+  margin-top: 16px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
