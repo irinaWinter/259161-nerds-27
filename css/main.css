@@ -527,11 +527,21 @@ html {
 
 /*contacts*/
 
+.contacts {
+  position: relative;
+}
+
 .contacts__card {
+  position: absolute;
+  top: 54px;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 49px 50px 48px 50px;
   background-color: #fff;
 }
 
 .contacts__heading {
+  margin: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -539,6 +549,9 @@ html {
 }
 
 .contacts__text {
+  display: block;
+  margin-top: 21px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 18px;
   color: #666;
@@ -586,6 +599,10 @@ html {
 
 
 /*footer*/
+
+.footer {
+  margin-top: 80px;
+}
 
 .footer__text {
   font-size: 36px;
