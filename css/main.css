@@ -497,7 +497,9 @@ html {
 /*client*/
 
 .client {
-  /*margin-top: 45px;*/
+  margin-top: 45px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .client__list {
