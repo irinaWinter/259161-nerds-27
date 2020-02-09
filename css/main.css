@@ -396,6 +396,19 @@ html {
 
 /*about*/
 
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-col-left {
+  width: 660px;
+}
+
+.about-col-right {
+  width: 360px;
+}
+
 .about__text {
   font-size: 45px;
   font-weight: 500;
