@@ -641,7 +641,15 @@ html {
   text-transform: uppercase;
 }
 
+.range__label:not(:first-of-type) {
+  margin-left: 28px;
+}
+
 .range__value {
+  box-sizing: border-box;
+  margin-left: 9px;
+  width: 80px;
+  height: 38px;
   background-color: #eeeeee;
   border: none;
 
@@ -716,7 +724,7 @@ html {
 /*filters*/
 
 .filters {
-  width: 260px;
+  width: 262px;
 }
 
 .filters__fieldset {
