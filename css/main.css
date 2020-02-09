@@ -252,7 +252,7 @@ html {
 .slide:nth-child(1)::after {
   width: 698px;
   height: 413px;
-  top: 0%;
+  bottom: 0%;
   right: 13.9%;
   background-image: url(../img/slide1.png);
 }
@@ -260,7 +260,7 @@ html {
 .slide:nth-child(2)::after {
   width: 663px;
   height: 430px;
-  top: -3.9%;
+  bottom: 0%;
   right: 11.86%;
   background-image: url(../img/slide2.png);
 }
@@ -268,7 +268,7 @@ html {
 .slide:nth-child(3)::after {
   width: 759px;
   height: 411px;
-  top: 0.7%;
+  bottom: 0%;
   right: 11.8%;
   background-image: url(../img/slide3.png);
 }
@@ -295,12 +295,45 @@ html {
 
 .dots {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: 22.4%;
+  left: 47%;
 
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.dots__item {
+  display: inline-block;
+  vertical-align: center;
+} 
+
+.dots__item:not(:first-child) {
+  margin-left: 14px;
+}
+
+.dot {
+  position: relative;
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.dot-active::after {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  content: "";
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 
