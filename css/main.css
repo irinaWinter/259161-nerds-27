@@ -206,15 +206,24 @@ html {
 }
 
 
+/*principles*/
+
+.principles {
+  position: relative;
+  background-color: #eeeeee;
+}
+
+
 /*slider*/
 
 .slider {
   margin: 0;
-  padding: 0;
-  background-color: #eeeeee;
+  padding: 0; 
   list-style-type: none;
 }
 
+.slide {
+  padding: 60px 0 80px;
 .slide__text {
   font-size: 55px;
   font-weight: 500;
