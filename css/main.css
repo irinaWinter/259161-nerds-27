@@ -58,16 +58,37 @@ html {
 }
 
 .btn {
+  display: block;
+  margin-top: 39px;
+  padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-align: center;
   text-transform: uppercase;
 
   border: none;
+  border-radius: 2px;
 }
 
 .btn:active {
   box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-small {
+  width: 160px;
+}
+
+.btn-medium {
+  width: 220px;
+}
+
+.btn-big {
+  width: 240px;
+}
+
+.btn-huge {
+  width: 260px;
 }
 
 .btn-red {
