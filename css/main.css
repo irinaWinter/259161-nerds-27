@@ -190,19 +190,19 @@ html {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 201px;
 }
 
 .user-navigation {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
 }
 
-.navigation__item {
-  display: inline-block;
-  vertical-align: top;
-}
 .navigation__item:not(:first-child) {
-  margin-left: 42.6px;
+  margin-left: 47.2px;
 }
 
 .navigation__link {
@@ -216,6 +216,22 @@ html {
 .navigation__link-active {
   padding-bottom: 9px;
   border-bottom: 2px solid #fb565a;
+}
+
+.navigation__link-basket {
+  position: relative;	
+  padding-left: 40px;
+}
+
+.navigation__link-basket::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/cart-icon.svg);
+  background-repeat: no-repeat;
 }  
 
 .navigation__link:hover,
