@@ -45,14 +45,17 @@
             <fieldset class="filters__fieldset">
               <legend class="filters__type">Стоимость:</legend>
               <div class="range">
-                <div class="range__track">
+                <div class="range__controls">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
                   <div class="range__pin range__pin-min"></div>
                   <div class="range__pin range__pin-max"></div>
                 </div>
-                <label class="range__label" for="min-price">От</label>
-                <input class="range__value" type="number" value="0" name="min" id="min-price">
-                <label class="range__label" for="max-price">До</label>
-                <input class="range__value" type="number" value="15000" name="max" id="max-price">
+                <div class="range-price">
+                  <label class="range__label">От<input class="range__value" type="number" value="0" name="min"></label>
+                  <label class="range__label">До<input class="range__value" type="number" value="15000" name="max"></label>
+                </div>  
               </div>
             </fieldset>
             <fieldset class="filters__fieldset">

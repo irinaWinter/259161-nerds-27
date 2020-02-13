@@ -46,7 +46,7 @@ html {
 
 .box-grey {
   margin-bottom: 55px;
-  padding: 59px 0 110px;
+  padding: 61px 0 108px;
   background-color: #eeeeee;
 }
 
@@ -694,6 +694,58 @@ html {
 
 /*range*/
 
+.range {
+	margin-top: 48px;
+  width: 260px;
+}
+
+.range__controls {
+	position: relative;
+	padding: 39px 20px 0;
+	height: 41px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+.range__scale {
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+.range__bar {
+	width: 70%;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.range__pin {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	/*padding: 0;*/
+	border: 8px solid #fff;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range__pin-min {
+	left: 18px;
+}
+
+.range__pin-max {
+	left: 160px;
+}
+
+.range-price {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 14px;
+}
+
 .range__label {
   font-size: 16px;
   line-height: 22px;
@@ -701,13 +753,9 @@ html {
   text-transform: uppercase;
 }
 
-.range__label:not(:first-of-type) {
-  margin-left: 28px;
-}
-
 .range__value {
   box-sizing: border-box;
-  margin-left: 9px;
+  margin-left: 12px;
   width: 80px;
   height: 38px;
   background-color: #eeeeee;
@@ -798,6 +846,7 @@ html {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  letter-spacing: 0.7px;
 }
 
 .filters__list {
