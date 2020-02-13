@@ -530,7 +530,7 @@ html {
 
 .client {
   margin-top: 45px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -578,17 +578,22 @@ html {
   position: relative;
 }
 
+.contacts__map {
+	display: block;
+	margin: 0 auto;
+}
+
 .contacts__card {
   position: absolute;
   top: 54px;
   box-sizing: border-box;
   width: 320px;
-  padding: 49px 50px 48px 50px;
+  padding: 49px 51px 46px 51px;
   background-color: #fff;
 }
 
 .contacts__heading {
-  margin: 0;
+  margin: 0 0 23px 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -597,7 +602,7 @@ html {
 
 .contacts__text {
   display: block;
-  margin-top: 21px;
+  margin-top: 18px;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 18px;
