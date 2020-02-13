@@ -543,6 +543,21 @@ html {
   list-style-type: none;
 }
 
+.client__item {
+	position: relative;
+	padding-left: 45px;
+}
+
+.client__item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 2px;
+  height: 52px;
+  background-color: #eee;
+}
+
 .client__link {
   opacity: 0.2;
 }
