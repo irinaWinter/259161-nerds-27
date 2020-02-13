@@ -613,26 +613,30 @@ html {
 /*social*/
 
 .container-social {
-  display: flex;
-  align-items: center;
+	display: flex;
+	margin-top: 70px;
 }
 
 .social {
+	display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
 }
 
-.social__item {
-  display: inline-block;
-  vertical-align: center;
-}
 .social__item:not(:first-child) {
-  margin-left: 12px;
+  margin-left: 13px;
 }
 
 .social__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 78px;
+	height: 78px;
   background-color: #e1e1e1;
+  border-radius: 50%;
 }
 
 .social__link:hover,
@@ -654,12 +658,15 @@ html {
 
 .footer {
   margin-top: 80px;
+  padding-bottom: 69px;
 }
 
 .footer__text {
+	margin: 0;
   font-size: 36px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 45px;
+  letter-spacing: 0.2px;
 }
 
 .container-discount {
@@ -667,6 +674,7 @@ html {
 }
 
 .footer__discount {
+	margin: 6px 0 0 0;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
