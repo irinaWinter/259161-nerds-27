@@ -921,12 +921,17 @@ html {
   background-color: rgba(77, 77, 77, 1);
 }
 
+.filters__radio:not(:disabled):hover + .filters__label::before,
+.filters__radio:not(:disabled):focus + .filters__label::before {
+  border-color: rgba(77, 77, 77, 1);
+}
+
 	/*checkbox*/
 
 .filters__checkbox + .filters__label::before {
 	content: "";
 	position: absolute;
-	top: -3px;
+	top: -2px;
 	left: 0;
   width: 19px;
   height: 19px;
