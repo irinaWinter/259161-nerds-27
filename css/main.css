@@ -821,12 +821,31 @@ html {
   color: rgba(0, 0, 0, 1);
 }
 
+.sort__btn {
+	background-image: url('../img/icon-down-dir.svg');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	background-color: transparent;
+	border: none;
+	opacity: 0.1;
+	cursor: pointer;
+}
+
+.sort__btn:not(.sort__btn-active):hover {
+  opacity: 0.35;
+}
+
 .sort__btn-min {
   margin-left: 40px;
 }
 
 .sort__btn-max {
-  margin-left: 10px;
+  margin-left: 17px;
+  transform: rotate(180deg) translateY(2px);
+}
+
+.sort__btn-active {
+	opacity: 1;
 }
 
 
@@ -975,6 +994,7 @@ html {
 .filters__checkbox:not(:disabled):focus + .filters__label::after {
   opacity: 1;
 }
+
 
 /*templates*/
 
