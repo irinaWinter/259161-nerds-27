@@ -321,7 +321,7 @@ html {
 .dots {
   position: absolute;
   bottom: 22.4%;
-  left: 47.6%;
+  left: 47.1%;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -333,7 +333,7 @@ html {
 } 
 
 .dots__item:not(:first-child) {
-  margin-left: 14px;
+  margin-left: 13px;
 }
 
 .dot {
