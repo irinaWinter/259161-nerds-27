@@ -610,6 +610,11 @@ html {
 	margin: 0 auto;
 }
 
+.contacts__map-interactive {
+  position: absolute;
+  top: 0; 
+}
+
 .contacts__card {
   position: absolute;
   top: 55px;
