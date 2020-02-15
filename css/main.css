@@ -429,7 +429,7 @@ html {
 }
 
 .about-col-left {
-  padding-top: 34px;
+  padding-top: 35px;
   width: 660px;
 }
 
@@ -496,6 +496,7 @@ html {
 
 .statistics {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 58px 0 0 0;
   padding: 0;
@@ -503,15 +504,16 @@ html {
 }
 
 .statistics__item {
+  width: 119px;
   text-align: left;
 }
 
-.statistics__item:not(:first-child) {
-	margin-left: 27px;
+.statistics__item:nth-child(1n + 4) {
+  margin-top: 65px;
 }
 
 .statistics__text {
-  margin: 22px 0 0 0;
+  margin: 23px 0 0 0;
   font-size: 16px;
   line-height: 18px;
   color: #283136;
