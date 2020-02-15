@@ -893,7 +893,7 @@ html {
 }
 
 .filters__fieldset-grid {
-	margin-top: 54px;
+	margin-top: 56px;
 }
 
 .filters__fieldset-features {
@@ -983,7 +983,7 @@ html {
 	position: absolute;
 	top: -2px;
 	left: 0;
-  width: 19px;
+  width: 20px;
   height: 19px;
   border: 2px solid rgba(77, 77, 77, 0.4);
   border-radius: 3px;
