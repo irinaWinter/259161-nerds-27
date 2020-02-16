@@ -618,9 +618,11 @@ html {
 
 .contacts {
   position: relative;
+  overflow: hidden;
 }
 
 .contacts__map {
+  min-width: 1440px;
 	display: block;
 	margin: 0 auto;
 }
