@@ -220,20 +220,28 @@
           <p class="footer__text">Давайте дружить, это выгодно!</p>
           <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
         </div>
+      </div>
+      <div class="container-popup hidden">
+        <section class="popup">
+          <h2 class="popup__heading">Напишите нам</h2>
+          <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="popup__field">
+              <label class="popup__label">Ваше имя</label>
+              <input class="popup__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="popup__field">  
+              <label class="popup__label" for="e-mail">Ваш e-mail:</label>
+              <input class="popup__input" type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+            </p>  
+            <label class="popup__label popup__label-textarea" for="text">Текст письма:</label>
+            <textarea class="popup__textarea" name="text" id="text" placeholder="В свободной форме"></textarea>
+            <button class="btn btn-red btn-huge" type="submit">Отправить</button>
+          </form>
+          <button class="popup__close" type="button" aria-label="Закрыть"></button>
+        </section>
       </div>  
     </footer>
-    <section class="popup hidden">
-      <h2 class="popup__heading">Напишите нам</h2>
-      <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="popup__label">Ваше имя</label>
-        <input class="popup__field" type="text" name="name" id="name" placeholder="Имя Фамилия">
-        <label class="popup__label" for="e-mail">Ваш e-mail:</label>
-        <input class="popup__field" type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
-        <label class="popup__label" for="text">Текст письма:</label>
-        <textarea class="popup__textarea" name="text" id="text" placeholder="В свободной форме"></textarea>
-        <button class="btn btn-red" type="submit">Отправить</button>
-        <button class="popup__close" type="button" aria-label="Закрыть"></button>
-      </form>
-    </section>
+    
+    <script src="js/popup.js"></script>
   </body>
 </html>
