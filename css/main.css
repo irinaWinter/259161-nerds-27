@@ -264,8 +264,11 @@ html {
 /*principles*/
 
 .principles {
-  position: relative;
   background-color: #eeeeee;
+}
+
+.principles .container {
+  position: relative;
 }
 
 
@@ -335,7 +338,7 @@ html {
 .dots {
   position: absolute;
   bottom: 22.4%;
-  left: 47.1%;
+  left: 46.3%;
   margin: 0;
   padding: 0;
   list-style-type: none;
