@@ -514,6 +514,8 @@ html {
 }
 
 .statistics__item {
+  box-sizing: border-box;
+  padding-right: 15px;
   width: 119px;
   text-align: left;
 }
