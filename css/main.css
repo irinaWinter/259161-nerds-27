@@ -625,6 +625,9 @@ html {
 .contacts__map-interactive {
   position: absolute;
   top: 0; 
+  width: 100%;
+  height: 416px;
+  border: none;
 }
 
 .contacts__card {
