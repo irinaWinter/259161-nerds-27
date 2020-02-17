@@ -41,3 +41,20 @@ popup.addEventListener('click', function(event) {
   }  
   body.style.overflow = "visible";
 });
+
+
+// description
+
+var templates__link = document.querySelectorAll('.templates__link');
+
+templates__link.forEach(function(e, i) {
+  e.addEventListener('focus', function() {
+    e.parentElement.parentElement.style.opacity = '1';
+  });   
+});
+
+templates__link.forEach(function(e, i) {
+  e.addEventListener('blur', function() {
+    e.parentElement.parentElement.style.opacity = '0';
+  });   
+});
