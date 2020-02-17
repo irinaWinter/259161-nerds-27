@@ -45,16 +45,20 @@ popup.addEventListener('click', function(event) {
 
 // description
 
+var templates__item = document.querySelectorAll('.templates__item');
+var templates__description = document.querySelectorAll('.templates__description');
 var templates__link = document.querySelectorAll('.templates__link');
 
 templates__link.forEach(function(e, i) {
   e.addEventListener('focus', function() {
-    e.parentElement.parentElement.style.opacity = '1';
+    templates__description[i].classList.add('templates__description-show');
+    templates__item[i].classList.add('templates__item-browser-dark');
   });   
 });
 
 templates__link.forEach(function(e, i) {
   e.addEventListener('blur', function() {
-    e.parentElement.parentElement.style.opacity = '0';
+    templates__description[i].classList.remove('templates__description-show');
+    templates__item[i].classList.remove('templates__item-browser-dark');
   });   
 });

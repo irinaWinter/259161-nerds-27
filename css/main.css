@@ -1109,6 +1109,17 @@ html {
   transition-duration: 0.3s;
 }
 
+.templates__item-browser-dark::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 360px;
+  height: 40px;
+  background-image: url('../img/browser.svg');
+  opacity: 1;	
+}
+
 .templates__description {
   display: flex;
   flex-direction: column;
@@ -1126,6 +1137,10 @@ html {
 .templates__description:hover {
   opacity: 1;
   transition-duration: 0.3s;
+}
+
+.templates__description-show {
+	opacity: 1;
 }
 
 .templates__heading {
