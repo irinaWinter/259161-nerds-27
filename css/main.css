@@ -318,7 +318,6 @@ html {
 .slide__text {
   margin-top: 0;
   margin-bottom: 0;
-
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -749,6 +748,7 @@ html {
   width: 760px;
 }
 
+
 /*range*/
 
 .range {
@@ -781,7 +781,6 @@ html {
   left: 0;
   width: 4px;
   height: 4px;
-  /*padding: 0;*/
   border: 8px solid #fff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -817,7 +816,6 @@ html {
   height: 38px;
   background-color: #eeeeee;
   border: none;
-
   font-size: 16px;
   line-height: 22px;
   color: #283136;
@@ -1337,4 +1335,3 @@ html {
 .popup .btn {
   margin-top: 45px;
 }
-
